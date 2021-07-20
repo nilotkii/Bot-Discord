@@ -2,9 +2,9 @@ const Discord = require('discord.js');
 
 const bot = new Discord.Client();
 
-const token = (require('./credentials/discord_production.json').token);
+const token = (require('./credentials/discord.json').token);
 
-const rankingJSON = require('./data/ranking_production.json')
+const rankingJSON = require('./data/ranking.json')
 const ranking = Object.keys(rankingJSON).map(i => rankingJSON[Number(i)]);
 
 
